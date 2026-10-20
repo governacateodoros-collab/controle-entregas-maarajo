@@ -1,6 +1,7 @@
 import React,{useEffect,useMemo,useState}from'react';
 import {CalendarDays,CheckCircle2,Download,FileText,Lock,Plus,Search,Unlock,X}from'lucide-react';
 import {initialDeliveries,money,number,products}from'./data';
+import baseClients from './clientes.json';
 import './monthly.css';
 
 const useSaved=(key,fallback)=>{const [value,setValue]=useState(()=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}});useEffect(()=>{try{localStorage.setItem(key,JSON.stringify(value))}catch{alert('Não foi possível salvar: o armazenamento do navegador está cheio. Exporte os relatórios e remova anexos grandes.')}},[key,value]);return[value,setValue]};

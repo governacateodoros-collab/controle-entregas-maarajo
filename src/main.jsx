@@ -6,6 +6,7 @@ import baseClients from'./clientes.json';
 import{products,money,number,initialDeliveries}from'./data';
 import'./styles.css';
 import'./overview.css';
+import'./client-focus.js';
 import{SecureApp}from'./auth';
 import{useCloudState}from'./cloud-state';
 

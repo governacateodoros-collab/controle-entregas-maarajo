@@ -18,7 +18,17 @@ def run(url, chromium):
     expiry = int(time.time()) + 3600
     payload = base64.urlsafe_b64encode(json.dumps({"sub": "focus-test", "exp": expiry}).encode()).decode().rstrip("=")
     session = {"access_token": f"eyJhbGciOiJIUzI1NiJ9.{payload}.test", "refresh_token": "test-only", "expires_at": expiry, "expires_in": 3600, "token_type": "bearer", "user": {"id": "focus-test", "aud": "authenticated"}}
-    state = {"marajo-entregas-v1": [], "marajo-clientes-v1": clients}
+    state = {
+        "marajo-entregas-v1": [],
+        "marajo-clientes-v1": clients,
+        "marajo-opcoes-entrega-v1": {
+            "captadores": ["MARKIEL", "DORI"],
+            "motoristas": ["CARLOS EDUARDO"],
+            "veiculos": ["ABC1D23"],
+            "pagamentos": ["Pix", "Faturado"],
+            "produtos": ["Diesel S-10"],
+        },
+    }
     with sync_playwright() as p:
         browser = p.chromium.launch(executable_path=chromium, args=["--no-sandbox"])
         page = browser.new_page(viewport={"width": 1440, "height": 1000})
@@ -53,18 +63,14 @@ def run(url, chromium):
         type_continuously("Valor do litro (R$) *", "6.19")
         type_continuously("Custo com frete", "R$ 250,00")
         type_continuously("Distância (km)", "120")
-        type_continuously("Motorista", "CARLOS EDUARDO")
-        type_continuously("Veículo", "ABC1D23")
         type_continuously("Observação", "Entrega na fazenda pela manhã")
-        control = field("Motorista")
-        control.click()
-        control.press("Home")
-        page.keyboard.type("SR ")
-        assert control.input_value() == "SR CARLOS EDUARDO"
-        control.press("Backspace")
-        assert control.input_value() == "SRCARLOS EDUARDO"
-        assert control.evaluate("el => el === document.activeElement")
-        print("PASS: cursor editing and Backspace")
+        field("Motorista").select_option("CARLOS EDUARDO")
+        field("Veículo").select_option("ABC1D23")
+        field("Forma de pagamento").select_option("Faturado")
+        assert field("Motorista").input_value() == "CARLOS EDUARDO"
+        assert field("Veículo").input_value() == "ABC1D23"
+        assert field("Forma de pagamento").input_value() == "Faturado"
+        print("PASS: options are selected from the operational registry")
         field("PDF da NF-e").set_input_files({"name": "test.pdf", "mimeType": "application/pdf", "buffer": b"%PDF-1.4\n%%EOF"})
         page.get_by_text("PDF anexado", exact=True).wait_for()
         field("Captador").select_option("DORI")

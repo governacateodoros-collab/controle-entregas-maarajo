@@ -19,6 +19,11 @@ async function createTeamAccess({username,password,fullName,jobTitle}){
   if(error)throw error;
   if(data.user?.identities?.length===0)throw new Error('Este usuário já está cadastrado.');
   if(!data.user)throw new Error('Não foi possível criar este acesso.');
+  const validation=await client.auth.signInWithPassword({email:username.trim().toLowerCase()+'@grupomarajo.local',password});
+  if(validation.error){
+    if(validation.error.message==='Email not confirmed')throw new Error('O cadastro foi criado, mas o Supabase exige confirmação de e-mail. Desative essa exigência no provedor Email antes de criar acessos internos.');
+    throw new Error('O Supabase não validou este login. O acesso não foi liberado; tente criar novamente com outro usuário.');
+  }
   return data.user;
 }
 

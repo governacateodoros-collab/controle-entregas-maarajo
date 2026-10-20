@@ -1,6 +1,7 @@
 import React,{useEffect,useMemo,useRef,useState}from'react';
+import{createClient}from'@supabase/supabase-js';
 import{CheckCircle2,LogIn,LockKeyhole,User}from'lucide-react';
-import{supabase}from'./supabase';
+import{supabase,SUPABASE_PUBLISHABLE_KEY,SUPABASE_URL}from'./supabase';
 import{Brand}from'./Brand';
 import{ProfileContext,ProfileEditor,avatarKey,displayProfile,persistAvatar}from'./profile';
 import'./auth.css';
@@ -10,6 +11,15 @@ function authError(error){
   if(error?.message==='User already registered')return 'Este usuário já está cadastrado. Entre com sua senha.';
   if(error?.message==='Email not confirmed')return 'Este acesso ainda não foi liberado. Verifique a configuração da conta.';
   return 'Não foi possível concluir o acesso. Confira os dados e tente novamente.';
+}
+
+async function createTeamAccess({username,password,fullName,jobTitle}){
+  const client=createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{persistSession:false,autoRefreshToken:false,detectSessionInUrl:false}});
+  const{data,error}=await client.auth.signUp({email:username.trim().toLowerCase()+'@grupomarajo.local',password,options:{data:{full_name:fullName.trim(),job_title:jobTitle.trim()}}});
+  if(error)throw error;
+  if(data.user?.identities?.length===0)throw new Error('Este usuário já está cadastrado.');
+  if(!data.user)throw new Error('Não foi possível criar este acesso.');
+  return data.user;
 }
 
 function Login({onBusyChange}){
@@ -49,6 +59,7 @@ export function SecureApp({children}){
   const userId=session?.user?.id;
   const avatar=avatarState.userId===userId?avatarState.avatar:null;
   const profile=useMemo(()=>displayProfile(session?.user,avatar),[session?.user,avatar]);
+  const canManageAccess=session?.user?.email?.toLowerCase()==='teodoro@grupomarajo.local';
 
   useEffect(()=>{
     let active=true;
@@ -99,11 +110,15 @@ export function SecureApp({children}){
       setSavedMessage('Perfil atualizado com sucesso.');
     }catch{throw new Error(photoSaved?'A foto foi salva, mas não foi possível atualizar nome e cargo. Tente novamente.':'Não foi possível salvar nome e cargo. Confira a conexão e tente novamente.')}
   };
+  const createAccess=async values=>{
+    if(!canManageAccess)throw new Error('Somente o administrador Teodoro pode criar acessos.');
+    return createTeamAccess(values);
+  };
 
   if(session===undefined)return <div className="auth-loading">Carregando acesso seguro…</div>;
   if(!session||authPending)return <Login onBusyChange={setAuthPending}/>;
   const activeDraft=pendingPhoto?.userId===userId?pendingPhoto:null;
-  return <ProfileContext.Provider value={{user:session.user,profile,photoLoading,photoReadError,photoDraft:activeDraft?activeDraft.avatar:undefined,profileNotice:activeDraft?.message,saveProfile,openProfile:()=>{setPendingPhoto(null);setProfileOpen(true)},closeProfile}}>
+  return <ProfileContext.Provider value={{user:session.user,profile,photoLoading,photoReadError,photoDraft:activeDraft?activeDraft.avatar:undefined,profileNotice:activeDraft?.message,saveProfile,canManageAccess,createAccess,openProfile:()=>{setPendingPhoto(null);setProfileOpen(true)},closeProfile}}>
     <button className="auth-signout" onClick={()=>{closeProfile();setSavedMessage('');supabase.auth.signOut()}}>Sair</button>
     {children}
     {profileOpen&&(!pendingPhoto||activeDraft)&&<ProfileEditor/>}

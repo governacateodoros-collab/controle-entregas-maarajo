@@ -86,8 +86,23 @@ export function ProfileFields({fullName,jobTitle,onNameChange,onJobChange,disabl
   </div>;
 }
 
+function AccessCreator({onCreate,disabled}){
+  const[username,setUsername]=useState(''),[password,setPassword]=useState(''),[fullName,setFullName]=useState(''),[jobTitle,setJobTitle]=useState('Operador de logística');
+  const[busy,setBusy]=useState(false),[message,setMessage]=useState(''),[error,setError]=useState('');
+  const submit=async()=>{
+    const login=username.trim().toLowerCase();
+    setMessage('');setError('');
+    if(!/^[a-z0-9._-]{3,60}$/.test(login)){setError('Use um usuário com 3 a 60 letras, números, ponto, hífen ou sublinhado.');return}
+    if(password.length<6){setError('A senha deve ter pelo menos 6 caracteres.');return}
+    if(fullName.trim().length<3||!jobTitle.trim()){setError('Informe nome completo e cargo.');return}
+    setBusy(true);
+    try{await onCreate({username:login,password,fullName,jobTitle});setUsername('');setPassword('');setFullName('');setJobTitle('Operador de logística');setMessage('Acesso criado. A pessoa já pode entrar com o usuário e a senha definidos.')}catch(err){setError(err.message==='User already registered'?'Este usuário já está cadastrado.':err.message||'Não foi possível criar o acesso.')}finally{setBusy(false)}
+  };
+  return <section className="access-creator" aria-label="Cadastrar novo acesso" onKeyDown={event=>event.key==='Enter'&&event.preventDefault()}><div><span>ADMINISTRAÇÃO</span><h3>Cadastrar novo login</h3><p>Somente o Teodoro pode criar acessos para a equipe.</p></div><div className="access-fields"><label><small>Usuário</small><input aria-label="Novo usuário" value={username} onChange={e=>setUsername(e.target.value)} placeholder="Ex.: markiel" disabled={disabled||busy}/></label><label><small>Senha inicial</small><input aria-label="Senha inicial" type="password" value={password} onChange={e=>setPassword(e.target.value)} placeholder="Mínimo 6 caracteres" disabled={disabled||busy}/></label><label><small>Nome completo</small><input aria-label="Nome completo do novo usuário" value={fullName} onChange={e=>setFullName(e.target.value)} placeholder="Nome da pessoa" disabled={disabled||busy}/></label><label><small>Cargo</small><select aria-label="Cargo do novo usuário" value={jobTitle} onChange={e=>setJobTitle(e.target.value)} disabled={disabled||busy}>{JOB_TITLES.map(job=><option key={job}>{job}</option>)}</select></label></div>{error&&<p className="profile-feedback error" role="alert">{error}</p>}{message&&<p className="profile-feedback success" role="status">{message}</p>}<button type="button" className="btn primary" disabled={disabled||busy} onClick={submit}>{busy?'Criando acesso...':'Criar login'}</button></section>
+}
+
 export function ProfileEditor(){
-  const{profile,saveProfile,closeProfile,photoReadError,photoLoading,photoDraft,profileNotice}=useProfile();
+  const{profile,saveProfile,closeProfile,photoReadError,photoLoading,photoDraft,profileNotice,canManageAccess,createAccess}=useProfile();
   const[fullName,setFullName]=useState(profile.fullName==='Meu perfil'?'':profile.fullName);
   const[jobTitle,setJobTitle]=useState(profile.jobTitle==='Completar perfil'?'':profile.jobTitle);
   const[nameChanged,setNameChanged]=useState(false),[jobChanged,setJobChanged]=useState(false);
@@ -125,6 +140,7 @@ export function ProfileEditor(){
       <form onSubmit={submit}>
         <PhotoField photo={photo} fullName={fullName} onChange={value=>{setPhoto(value);setPhotoChanged(true)}} disabled={busy||photoLoading} onWorkingChange={setProcessing}/>
         <ProfileFields fullName={fullName} jobTitle={jobTitle} onNameChange={value=>{setNameChanged(true);setFullName(value)}} onJobChange={value=>{setJobChanged(true);setJobTitle(value)}} disabled={busy}/>
+        {canManageAccess&&<AccessCreator onCreate={createAccess} disabled={busy||processing||photoLoading}/>}
         {photoLoading&&<p className="profile-feedback" role="status">Carregando sua foto...</p>}
         {(error||profileNotice||photoReadError)&&<p className="profile-feedback error" role="alert">{error||profileNotice||photoReadError}</p>}
         <footer className="profile-editor-footer"><button type="button" className="btn" disabled={busy||processing} onClick={closeProfile}>Cancelar</button><button className="btn primary" disabled={busy||processing||photoLoading}><Check size={17}/>{busy?'Salvando...':'Salvar perfil'}</button></footer>

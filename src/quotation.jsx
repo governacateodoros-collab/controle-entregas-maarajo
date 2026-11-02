@@ -286,7 +286,8 @@ export function Quotation({ clients, products, onMessage }) {
   };
   return (
     <section className="quotation-page">
-      <div className="quote-editor panel">
+    <div className="quote-editor panel liquid-glass">
+      <span className="liquid-glass__refraction" aria-hidden="true" />
         <div className="quote-section-heading">
           <span className="quote-heading-icon">
             <ShoppingBag size={21} />
@@ -465,7 +466,8 @@ export function Quotation({ clients, products, onMessage }) {
           </span>
           <small>A imagem será gerada em alta qualidade</small>
         </div>
-        <article className="quote-preview">
+      <article className="quote-preview liquid-glass">
+        <span className="liquid-glass__refraction" aria-hidden="true" />
           <div className="quote-preview-top">
             <Brand />
             <div>

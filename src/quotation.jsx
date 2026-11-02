@@ -350,6 +350,7 @@ export function Quotation({ clients, products, onMessage }) {
   };
   return (
     <section className="quotation-page">
+      <div className="quotation-workspace">
     <div className="quote-editor panel liquid-glass">
       <span className="liquid-glass__refraction" aria-hidden="true" />
         <div className="quote-section-heading">
@@ -599,6 +600,7 @@ export function Quotation({ clients, products, onMessage }) {
           <Download size={15} /> Se o celular não permitir copiar, o arquivo PNG
           será baixado automaticamente.
         </div>
+      </div>
       </div>
       <section className="quote-history panel liquid-glass" aria-label="Histórico de orçamentos">
         <span className="liquid-glass__refraction" aria-hidden="true" />

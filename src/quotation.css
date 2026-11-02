@@ -1,4 +1,7 @@
 .quotation-page {
+  display: block;
+}
+.quotation-workspace {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(390px, 0.88fr);
   gap: 24px;
@@ -403,7 +406,7 @@
   line-height: 1.5;
 }
 @media (max-width: 1100px) {
-  .quotation-page {
+  .quotation-workspace {
     grid-template-columns: 1fr;
   }
   .quote-preview-wrap {
@@ -511,3 +514,6 @@
 }
 
 .quote-history{position:relative;grid-column:1/-1;overflow:hidden;margin-top:2px}.quote-history-heading{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 24px;border-bottom:1px solid #e8edf3}.quote-history-heading>div:first-child{display:flex;align-items:center;gap:12px}.quote-history-heading h2{margin:0;color:#1f2b3f;font-size:19px}.quote-history-heading p{margin:5px 0 0;color:#718096;font-size:12px}.quote-history-filters{display:flex;gap:7px}.quote-history-filters button{border:1px solid #dfe6ef;border-radius:999px;background:#fff;color:#63728a;padding:8px 11px;font-size:11px;font-weight:800}.quote-history-filters button.active{border-color:#d92b35;background:#fff1f2;color:#bd1d27}.quote-history-list{position:relative;z-index:1;display:grid;gap:10px;padding:16px 24px 22px}.quote-history-item{display:flex;align-items:center;gap:16px;padding:15px 16px;border:1px solid #e2e8f0;border-radius:14px;background:rgba(255,255,255,.82);box-shadow:0 6px 18px rgba(28,47,73,.06)}.quote-history-main{display:grid;grid-template-columns:minmax(190px,1.35fr) minmax(115px,.65fr) minmax(135px,.8fr) minmax(190px,1.15fr);align-items:center;gap:16px;flex:1;min-width:0}.quote-history-client{min-width:0}.quote-history-client b{display:block;overflow:hidden;color:#20334e;font-size:14px;text-overflow:ellipsis;white-space:nowrap}.quote-history-client span{display:block;overflow:hidden;margin-top:4px;color:#7a8799;font-size:11px;text-overflow:ellipsis;white-space:nowrap}.quote-history-main small{display:block;color:#8b97a7;font-size:10px;font-weight:700;text-transform:uppercase}.quote-history-main>div>b{display:block;margin-top:4px;color:#263a57;font-size:14px}.quote-history-validity{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:7px;padding:9px 11px;border-radius:10px;background:#eef8f4;color:#19845d}.quote-history-validity.today{background:#fff6e5;color:#b27400}.quote-history-validity.expired{background:#fff0f1;color:#bf2630}.quote-history-validity b{font-size:13px!important}.quote-history-validity em{grid-column:2;color:inherit;font-size:10px;font-style:normal;font-weight:800}.quote-history-actions{display:flex;gap:7px}.quote-history-actions button{display:inline-flex;align-items:center;gap:5px;border:1px solid #dfe6ef;border-radius:8px;background:#fff;color:#2c5f9f;padding:8px 10px;font-size:11px;font-weight:800}.quote-history-actions button:last-child{color:#c32b35}.quote-history-empty{display:grid;place-items:center;gap:7px;min-height:135px;border:1px dashed #dce4ed;border-radius:13px;color:#789}.quote-history-empty svg{color:#d72c35}.quote-history-empty b{color:#43546d;font-size:13px}.quote-history-empty span{font-size:11px;text-align:center}@media(max-width:850px){.quote-history-main{grid-template-columns:1.2fr 1fr 1fr}.quote-history-validity{grid-column:1/-1}.quote-history-item{align-items:flex-start;flex-direction:column}.quote-history-actions{align-self:flex-end}}@media(max-width:600px){.quote-history-heading{align-items:flex-start;flex-direction:column;padding:19px 18px}.quote-history-heading h2{font-size:17px}.quote-history-filters{width:100%;overflow:auto}.quote-history-filters button{flex:1;white-space:nowrap}.quote-history-list{padding:14px 18px 18px}.quote-history-main{grid-template-columns:1fr 1fr;gap:13px}.quote-history-client{grid-column:1/-1}.quote-history-validity{grid-column:1/-1}.quote-history-actions{width:100%}.quote-history-actions button{flex:1;justify-content:center}.quote-save{min-width:0!important}}
+
+/* O histórico é uma seção independente: não compartilha o contexto da prévia fixa. */
+.quote-history{position:relative!important;z-index:2;isolation:isolate;margin-top:24px!important;background:rgba(255,255,255,.97)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}.quote-history .liquid-glass__refraction{display:none}

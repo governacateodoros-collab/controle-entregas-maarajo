@@ -28,3 +28,5 @@
 .premium-volume .premium-chart-shell{height:378px}.premium-volume .premium-bar-value rect{fill-opacity:.98}@media(max-width:720px){.premium-volume .premium-chart-shell{height:350px}.premium-volume .premium-bar-value text{font-size:10px}.premium-volume .premium-bar-value rect{height:19px}}
 .premium-volume .premium-chart-shell{height:408px}@media(max-width:720px){.premium-volume .premium-chart-shell{height:376px}}
 .premium-volume .premium-chart-shell{height:434px}@media(max-width:720px){.premium-volume .premium-chart-shell{height:400px}}
+/* Valores dentro das colunas: dias com movimento recebem mais largura e leitura direta. */
+.premium-volume .premium-chart-shell{height:340px}.premium-volume .premium-bar-value--inside text{paint-order:stroke;stroke:rgba(27,37,54,.22);stroke-width:1.35px;stroke-linejoin:round}.premium-volume .premium-bar-value--inside rect,.premium-volume .premium-bar-value--inside line{display:none}@media(max-width:720px){.premium-volume .premium-chart-shell{height:300px}.premium-volume .premium-bar-value--inside text{font-size:9px}}

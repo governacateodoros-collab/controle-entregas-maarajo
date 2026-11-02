@@ -6,3 +6,5 @@
 .premium-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.premium-kpis>div:nth-child(odd){border-right:1px solid var(--c-grid)}.premium-kpis>div:nth-child(even){border-right:0}.premium-kpis>div:nth-child(n+3){border-top:1px solid var(--c-grid)}
 
 .premium-capture-list strong span{display:inline-block;margin-right:3px;color:var(--c-positive);font-size:12px;font-weight:800}.premium-capture-copy span i{transition:width .35s cubic-bezier(.2,.8,.2,1)}
+/* Pizza simétrica com face inferior tridimensional. */
+.premium-capture-layout{grid-template-columns:minmax(300px,1fr) minmax(300px,1fr);align-items:center}.premium-donut{display:grid;place-items:center;min-height:320px}.premium-donut .recharts-wrapper{margin:auto}.premium-donut .recharts-surface{overflow:visible;filter:drop-shadow(0 9px 7px rgba(27,37,54,.12))}.premium-pie-depth{transform-box:fill-box;transform-origin:center}@media(max-width:1050px){.premium-capture-layout{grid-template-columns:1fr}.premium-donut{min-height:280px}}

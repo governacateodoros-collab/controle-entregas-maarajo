@@ -18,12 +18,16 @@
 html{background:#e9edf3}
 body{
   min-height:100vh;
+  text-transform:capitalize;
   background:
     radial-gradient(900px 560px at -8% -12%,rgba(227,33,36,.18),transparent 64%),
     radial-gradient(760px 520px at 106% 5%,rgba(33,102,181,.16),transparent 66%),
     linear-gradient(155deg,#f6f8fb 0%,#e9eef5 50%,#f8f4f3 100%);
   background-attachment:fixed;
 }
+/* Mantém Dados Digitados Exatamente Como Foram Informados Pela Equipe. */
+input,textarea{ text-transform:none }
+input::placeholder,textarea::placeholder{ text-transform:capitalize }
 
 body:before{
   content:"";

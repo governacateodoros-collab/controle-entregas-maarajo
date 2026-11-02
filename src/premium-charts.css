@@ -24,3 +24,7 @@
 .premium-volume .premium-bar-value text{letter-spacing:-.01em;paint-order:stroke;stroke:rgba(255,255,255,.74);stroke-width:1px;stroke-linejoin:round}.premium-volume .premium-bar-value rect{filter:drop-shadow(0 2px 2px rgba(27,37,54,.08))}
 /* Em larguras intermediárias, duas colunas evitam valores financeiros comprimidos. */
 @media(max-width:1100px){.premium-volume .premium-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}.premium-volume .premium-kpis>div:nth-child(odd){border-right:1px solid var(--c-grid)!important}.premium-volume .premium-kpis>div:nth-child(even){border-right:0!important}.premium-volume .premium-kpis>div:nth-child(n+3){border-top:1px solid var(--c-grid)!important}.premium-volume .premium-kpis>div:nth-child(3n){border-right:1px solid var(--c-grid)!important}.premium-volume .premium-kpis>div:nth-child(even){border-right:0!important}}
+/* Todas as vendas recebem etiqueta; quatro níveis preservam a leitura entre dias próximos. */
+.premium-volume .premium-chart-shell{height:378px}.premium-volume .premium-bar-value rect{fill-opacity:.98}@media(max-width:720px){.premium-volume .premium-chart-shell{height:350px}.premium-volume .premium-bar-value text{font-size:10px}.premium-volume .premium-bar-value rect{height:19px}}
+.premium-volume .premium-chart-shell{height:408px}@media(max-width:720px){.premium-volume .premium-chart-shell{height:376px}}
+.premium-volume .premium-chart-shell{height:434px}@media(max-width:720px){.premium-volume .premium-chart-shell{height:400px}}

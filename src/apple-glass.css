@@ -149,6 +149,12 @@ td b{color:#29384d}.table-scroll tbody tr{transition:background .18s ease}.table
 }
 @media print{body{background:#fff}.sidebar,header{background:#fff;box-shadow:none;backdrop-filter:none}.panel,.stat-card,.result-card,.monthly-results{background:#fff;box-shadow:none;backdrop-filter:none}}
 
+/* Pop-ups Rolam Por Dentro E Nunca Transferem O Gesto Para A Página De Fundo. */
+body:has(.modal-overlay),html:has(.modal-overlay),body:has(.profile-editor-overlay),html:has(.profile-editor-overlay){overflow:hidden;overscroll-behavior:none}
+.modal-overlay,.profile-editor-overlay{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y}
+.modal.liquid-glass{overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y}
+.profile-editor{overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y}
+
 /* Material Líquido: Refração, Reflexo Especular E Borda Que Capta A Luz. */
 :root{
   --glass-bg:rgba(255,255,255,.13);

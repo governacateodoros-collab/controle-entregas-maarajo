@@ -24,7 +24,11 @@ const futureDate = (days) => {
 const dateLabel = (value) =>
   value ? new Date(`${value}T12:00:00`).toLocaleDateString("pt-BR") : "—";
 const clean = (value) => String(value || "").trim();
-const normalize = (value) => clean(value).toLocaleLowerCase("pt-BR");
+const normalize = (value) =>
+  clean(value)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLocaleLowerCase("pt-BR");
 const unique = (items) => [...new Set(items.map(clean).filter(Boolean))];
 const firstName = (value) => clean(value).split(/\s+/)[0] || "cliente";
 

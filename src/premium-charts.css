@@ -30,3 +30,5 @@
 .premium-volume .premium-chart-shell{height:434px}@media(max-width:720px){.premium-volume .premium-chart-shell{height:400px}}
 /* Valores dentro das colunas: dias com movimento recebem mais largura e leitura direta. */
 .premium-volume .premium-chart-shell{height:340px}.premium-volume .premium-bar-value--inside text{paint-order:stroke;stroke:rgba(27,37,54,.22);stroke-width:1.35px;stroke-linejoin:round}.premium-volume .premium-bar-value--inside rect,.premium-volume .premium-bar-value--inside line{display:none}@media(max-width:720px){.premium-volume .premium-chart-shell{height:300px}.premium-volume .premium-bar-value--inside text{font-size:9px}}
+/* Participação usa a mesma estrutura horizontal e legível do ranking. */
+.premium-participation-bars{padding-top:16px}.premium-participation-bars .recharts-bar-rectangle{cursor:pointer}

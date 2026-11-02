@@ -3,13 +3,19 @@ import {
   CalendarDays,
   Check,
   Clipboard,
+  Clock3,
   Download,
+  History,
+  Pencil,
+  Save,
   Search,
   ShoppingBag,
   Sparkles,
+  Trash2,
 } from "lucide-react";
 import { Brand } from "./Brand";
 import { money, number } from "./data";
+import { useCloudState } from "./cloud-state";
 import "./quotation.css";
 
 const localDate = (date = new Date()) => {
@@ -31,6 +37,13 @@ const normalize = (value) =>
     .toLocaleLowerCase("pt-BR");
 const unique = (items) => [...new Set(items.map(clean).filter(Boolean))];
 const firstName = (value) => clean(value).split(/\s+/)[0] || "cliente";
+const quoteValidity = (value) => {
+  const today = localDate();
+  if (!value || value < today) return { label: "Vencido", tone: "expired" };
+  if (value === today) return { label: "Vence hoje", tone: "today" };
+  const days = Math.ceil((new Date(`${value}T12:00:00`) - new Date(`${today}T12:00:00`)) / 86400000);
+  return { label: `Válido por ${days} dia${days !== 1 ? "s" : ""}`, tone: "valid" };
+};
 
 const blankQuote = (products) => ({
   sacado: "",
@@ -222,6 +235,9 @@ export function Quotation({ clients, products, onMessage }) {
   const [lookup, setLookup] = useState("");
   const [focused, setFocused] = useState(false);
   const [busy, setBusy] = useState(false);
+  const [history, setHistory] = useCloudState("marajo-orcamentos-v1", []);
+  const [editingId, setEditingId] = useState(null);
+  const [historyFilter, setHistoryFilter] = useState("all");
   const update = (key, value) =>
     setQuote((current) => ({ ...current, [key]: value }));
   const matches = useMemo(() => {
@@ -253,11 +269,55 @@ export function Quotation({ clients, products, onMessage }) {
     +quote.litros > 0 &&
     +quote.valor > 0 &&
     quote.validade;
-  const copyImage = async () => {
+  const historyRows = useMemo(
+    () => (Array.isArray(history) ? history : [])
+      .filter((item) => historyFilter === "all" || (historyFilter === "valid" ? quoteValidity(item.validade).tone !== "expired" : quoteValidity(item.validade).tone === historyFilter))
+      .sort((a, b) => String(b.updatedAt || b.createdAt).localeCompare(String(a.updatedAt || a.createdAt))),
+    [history, historyFilter],
+  );
+  const saveQuote = ({ silent = false } = {}) => {
     if (!ready) {
-      onMessage("Preencha cliente, produto, litragem, valor e validade.");
-      return;
+      if (!silent) onMessage("Preencha cliente, produto, litragem, valor e validade.");
+      return null;
     }
+    const now = new Date().toISOString();
+    const previous = (Array.isArray(history) ? history : []).find((item) => item.id === editingId);
+    const item = {
+      ...quote,
+      id: editingId || crypto.randomUUID?.() || `quote-${Date.now()}`,
+      total,
+      createdAt: previous?.createdAt || now,
+      updatedAt: now,
+    };
+    setHistory((items) => {
+      const current = Array.isArray(items) ? items : [];
+      return current.some((entry) => entry.id === item.id)
+        ? current.map((entry) => entry.id === item.id ? item : entry)
+        : [item, ...current];
+    });
+    setEditingId(item.id);
+    if (!silent) onMessage(previous ? "Orçamento atualizado no histórico." : "Orçamento salvo no histórico.");
+    return item;
+  };
+  const editQuote = (item) => {
+    setQuote({ ...blankQuote(products), ...item });
+    setLookup(`${item.sacado || "—"} · ${item.cliente || "Cliente"}`);
+    setEditingId(item.id);
+    onMessage("Orçamento carregado para edição.");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  const deleteQuote = (item) => {
+    if (!window.confirm(`Excluir o orçamento de ${item.cliente || "cliente"}?`)) return;
+    setHistory((items) => (Array.isArray(items) ? items : []).filter((entry) => entry.id !== item.id));
+    if (editingId === item.id) {
+      setQuote(blankQuote(products));
+      setLookup("");
+      setEditingId(null);
+    }
+    onMessage("Orçamento excluído do histórico.");
+  };
+  const copyImage = async () => {
+    if (!saveQuote({ silent: true })) return;
     setBusy(true);
     try {
       const canvas = await renderQuoteImage(quote);
@@ -439,9 +499,13 @@ export function Quotation({ clients, products, onMessage }) {
             onClick={() => {
               setQuote(blankQuote(products));
               setLookup("");
+              setEditingId(null);
             }}
           >
             Limpar
+          </button>
+          <button type="button" className="btn quote-save" onClick={() => saveQuote()}>
+            <Save size={17} /> {editingId ? "Atualizar histórico" : "Salvar no histórico"}
           </button>
           <button
             type="button"
@@ -536,6 +600,34 @@ export function Quotation({ clients, products, onMessage }) {
           será baixado automaticamente.
         </div>
       </div>
+      <section className="quote-history panel liquid-glass" aria-label="Histórico de orçamentos">
+        <span className="liquid-glass__refraction" aria-hidden="true" />
+        <div className="quote-history-heading">
+          <div>
+            <span className="quote-heading-icon"><History size={20} /></span>
+            <div><h2>Histórico De Orçamentos</h2><p>Consulte até quando cada preço pode ser mantido.</p></div>
+          </div>
+          <div className="quote-history-filters">
+            <button type="button" className={historyFilter === "all" ? "active" : ""} onClick={() => setHistoryFilter("all")}>Todos</button>
+            <button type="button" className={historyFilter === "valid" ? "active" : ""} onClick={() => setHistoryFilter("valid")}>Vigentes</button>
+            <button type="button" className={historyFilter === "expired" ? "active" : ""} onClick={() => setHistoryFilter("expired")}>Vencidos</button>
+          </div>
+        </div>
+        <div className="quote-history-list">
+          {historyRows.length ? historyRows.map((item) => {
+            const validity = quoteValidity(item.validade);
+            return <article className="quote-history-item" key={item.id}>
+              <div className="quote-history-main">
+                <div className="quote-history-client"><b>{item.cliente || "Cliente não informado"}</b><span>Sacado {item.sacado || "—"} · {item.produto || "—"}</span></div>
+                <div><small>Preço por litro</small><b>{money(+item.valor || 0)}</b></div>
+                <div><small>Valor total</small><b>{money(item.total ?? ((+item.litros || 0) * (+item.valor || 0)))}</b></div>
+                <div className={`quote-history-validity ${validity.tone}`}><Clock3 size={15}/><span><small>Preço válido até</small><b>{dateLabel(item.validade)}</b></span><em>{validity.label}</em></div>
+              </div>
+              <div className="quote-history-actions"><button type="button" onClick={() => editQuote(item)} title="Editar orçamento"><Pencil size={16}/>Editar</button><button type="button" onClick={() => deleteQuote(item)} title="Excluir orçamento"><Trash2 size={16}/>Excluir</button></div>
+            </article>;
+          }) : <div className="quote-history-empty"><History size={25}/><b>Nenhum orçamento neste filtro</b><span>Salve a proposta para acompanhar sua validade e editar quando precisar.</span></div>}
+        </div>
+      </section>
     </section>
   );
 }

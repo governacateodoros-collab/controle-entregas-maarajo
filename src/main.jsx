@@ -1,4 +1,5 @@
 import React,{useEffect,useMemo,useState}from'react';
+import "@fontsource-variable/inter";
 import{createRoot}from'react-dom/client';
 import{LayoutDashboard,Truck,Users,Plus,Search,Download,Printer,Eye,Pencil,Trash2,X,Check,CalendarDays,MapPin,FileText,Menu,ChevronRight,Droplets,Wallet,Route,PackageCheck,Car,UserRound,CreditCard,Boxes,Settings,Package,Landmark,Lock,Unlock}from'lucide-react';
 import{ResponsiveContainer,XAxis,YAxis,CartesianGrid,Tooltip,BarChart,Bar,PieChart,Pie,Cell,ReferenceLine,LabelList}from'recharts';

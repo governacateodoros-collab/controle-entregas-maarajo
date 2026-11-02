@@ -1,1 +1,1017 @@
-[{"id": "1", "sacado": "033923", "loja": "01", "cliente": "ABNER CAIXETA NETO", "fazenda": "SANTA SONIA"}, {"id": "2", "sacado": "310509", "loja": "01", "cliente": "AGNALDO SOUSA RESENDE", "fazenda": "CONQUISTA"}, {"id": "3", "sacado": "185596", "loja": "01", "cliente": "AGNER FERREIRA DO PRADO", "fazenda": "NOVO PLANALTO"}, {"id": "4", "sacado": "112441", "loja": "01", "cliente": "AGROPECUARIA MACHADINHO S/A", "fazenda": "SÃO JOSÉ"}, {"id": "5", "sacado": "232910", "loja": "01", "cliente": "AGROPECUARIA OTANI LTDA", "fazenda": "BELA MANHÃ"}, {"id": "6", "sacado": "232912", "loja": "01", "cliente": "ALBERTO EIJI OTANI", "fazenda": "NOVO PLANALTO"}, {"id": "7", "sacado": "198622", "loja": "01", "cliente": "ANTONIO ANSELMO DE FREITAS", "fazenda": ""}, {"id": "8", "sacado": "236311", "loja": "01", "cliente": "CEFAS MINERACAO LTDA", "fazenda": "MINERADORA"}, {"id": "9", "sacado": "011321", "loja": "01", "cliente": "CLEUBER MARCOS DE OLIVEIRA", "fazenda": ""}, {"id": "10", "sacado": "011321", "loja": "02", "cliente": "CLEUBER MARCOS DE OLIVEIRA", "fazenda": ""}, {"id": "11", "sacado": "011321", "loja": "03", "cliente": "CLEUBER MARCOS DE OLIVEIRA", "fazenda": "ILHÉUS"}, {"id": "12", "sacado": "011321", "loja": "04", "cliente": "CLEUBER MARCOS DE OLIVEIRA", "fazenda": "ESTRELA"}, {"id": "13", "sacado": "011321", "loja": "05", "cliente": "CLEUBER MARCOS DE OLIVEIRA", "fazenda": "PRIMAVERA"}, {"id": "14", "sacado": "198665", "loja": "01", "cliente": "DANIEL DO VALLE SANTA CRUZ", "fazenda": "VEREDAS DOS BURITIS"}, {"id": "15", "sacado": "191506", "loja": "01", "cliente": "FABIANO ALVES", "fazenda": ""}, {"id": "16", "sacado": "229072", "loja": "01", "cliente": "FABIO VIEIRA DO CARMO", "fazenda": "FAZENDA DA MATA"}, {"id": "17", "sacado": "236982", "loja": "01", "cliente": "FAZENDA SANTO ANTONIO AGROPECUARIA LTDA", "fazenda": "SANTO ANTÔNIO"}, {"id": "18", "sacado": "007539", "loja": "01", "cliente": "FERNANDO CAVALHEIRO MACHADO", "fazenda": ""}, {"id": "19", "sacado": "237862", "loja": "01", "cliente": "FERNANDO PERROTO BIAGI", "fazenda": "CANAÃ"}, {"id": "20", "sacado": "232862", "loja": "01", "cliente": "FRANCIS CARLOS GUIMARAES COUTO", "fazenda": "SÃO PEDRO"}, {"id": "21", "sacado": "193591", "loja": "01", "cliente": "JAIME PERINELLI", "fazenda": "SANTA CRISTINA"}, {"id": "22", "sacado": "003755", "loja": "01", "cliente": "JOSE ALEXANDRE SALMAZO", "fazenda": "CONQUISTA"}, {"id": "23", "sacado": "010637", "loja": "01", "cliente": "JOSE FRANCISCO FERREIRA DE SENA", "fazenda": ""}, {"id": "24", "sacado": "010637", "loja": "02", "cliente": "JOSE FRANCISCO FERREIRA DE SENA", "fazenda": "MIRAGEM"}, {"id": "25", "sacado": "010637", "loja": "03", "cliente": "JOSE FRANCISCO FERREIRA DE SENA", "fazenda": "NOVO LAR"}, {"id": "26", "sacado": "010637", "loja": "04", "cliente": "JOSE FRANCISCO FERREIRA DE SENA", "fazenda": "JAÇANÃ"}, {"id": "27", "sacado": "010637", "loja": "05", "cliente": "JOSE FRANCISCO FERREIRA DE SENA", "fazenda": "PAU A PIQUE"}, {"id": "28", "sacado": "220907", "loja": "01", "cliente": "JOSE HUMBERTO DE FARIAS", "fazenda": "PERDIZES"}, {"id": "29", "sacado": "213088", "loja": "01", "cliente": "LAERTE LEMES DE ARAUJO", "fazenda": ""}, {"id": "30", "sacado": "223876", "loja": "01", "cliente": "LEANDRO MARTINS FIGUEIREDO", "fazenda": "MATÃO"}, {"id": "31", "sacado": "237944", "loja": "01", "cliente": "LUIDG ALESSANDRO UCHOA", "fazenda": "BOIADEIRO"}, {"id": "32", "sacado": "237310", "loja": "01", "cliente": "MARCELO FRARE", "fazenda": "SANTA CRISTINA"}, {"id": "33", "sacado": "175710", "loja": "01", "cliente": "MARCIA MONTEIRO MENEGAZZO", "fazenda": "NOVA ERA"}, {"id": "34", "sacado": "230422", "loja": "01", "cliente": "MARCILIA MONTEIRO ALVES AMORIM", "fazenda": "MATÃO"}, {"id": "35", "sacado": "235362", "loja": "01", "cliente": "MARCIO RODRIGUES SIQUEIRA", "fazenda": "ESTÂNCIA"}, {"id": "36", "sacado": "201169", "loja": "01", "cliente": "MARCOS DANILO BEDRAN OLIVEIRA", "fazenda": ""}, {"id": "37", "sacado": "229762", "loja": "01", "cliente": "MAURICIO MIGUEL ELIAS", "fazenda": ""}, {"id": "38", "sacado": "242659", "loja": "01", "cliente": "ONICIO DO CARMO COUTO JUNIOR", "fazenda": "SANTA GLÓRIA"}, {"id": "39", "sacado": "173878", "loja": "01", "cliente": "RENATO RIBEIRO DO NASCIMENTO", "fazenda": "3 CORAÇÕES"}, {"id": "40", "sacado": "117170", "loja": "01", "cliente": "RENILDA MORO RODRIGUES", "fazenda": "BOCALON"}, {"id": "41", "sacado": "240260", "loja": "01", "cliente": "ROBERTA DAMACENA MACHADO UCHOA", "fazenda": "BOIADEIRO"}, {"id": "42", "sacado": "232911", "loja": "01", "cliente": "RODRIGO DE ALMEIDA LISBOA", "fazenda": "BELA MANHÃ"}, {"id": "43", "sacado": "037859", "loja": "01", "cliente": "TECCON S/A CONSTRUCAO E PAVIMENTACAO", "fazenda": "BOA VISTTA"}, {"id": "44", "sacado": "128829", "loja": "01", "cliente": "WANDER DE LIMA CAETANO", "fazenda": "PLANALTO"}, {"id": "45", "sacado": "235529", "loja": "01", "cliente": "WARLEM MENDONCA SILVA", "fazenda": "RECANTO DA MATA"}]
+[
+  {
+    "id": "cliente-importado-1",
+    "sacado": "003755",
+    "loja": "01",
+    "cliente": "JOSE ALEXANDRE SALMAZO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-2",
+    "sacado": "007539",
+    "loja": "01",
+    "cliente": "FERNANDO CAVALHEIRO MACHADO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-3",
+    "sacado": "010637",
+    "loja": "01",
+    "cliente": "JOSE FRANCISCO FERREIRA DE SENA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-4",
+    "sacado": "011321",
+    "loja": "01",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-5",
+    "sacado": "033923",
+    "loja": "01",
+    "cliente": "ABNER CAIXETA NETO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-6",
+    "sacado": "037859",
+    "loja": "01",
+    "cliente": "TECCON S/A CONSTRUCAO E PAVIMENTACAO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-7",
+    "sacado": "112441",
+    "loja": "01",
+    "cliente": "AGROPECUARIA MACHADINHO S/A",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-8",
+    "sacado": "117170",
+    "loja": "01",
+    "cliente": "RENILDA MORO RODRIGUES",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-9",
+    "sacado": "173878",
+    "loja": "01",
+    "cliente": "RENATO RIBEIRO DO NASCIMENTO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-10",
+    "sacado": "128829",
+    "loja": "01",
+    "cliente": "WANDER DE LIMA CAETANO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-11",
+    "sacado": "175710",
+    "loja": "01",
+    "cliente": "MARCIA MONTEIRO MENEGAZZO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-12",
+    "sacado": "185596",
+    "loja": "01",
+    "cliente": "AGNER FERREIRA DO PRADO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-13",
+    "sacado": "191506",
+    "loja": "01",
+    "cliente": "FABIANO ALVES",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-14",
+    "sacado": "193591",
+    "loja": "01",
+    "cliente": "JAIME PERINELLI",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-15",
+    "sacado": "198622",
+    "loja": "01",
+    "cliente": "ANTONIO ANSELMO DE FREITAS",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-16",
+    "sacado": "198665",
+    "loja": "01",
+    "cliente": "DANIEL DO VALLE SANTA CRUZ",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-17",
+    "sacado": "201169",
+    "loja": "01",
+    "cliente": "MARCOS DANILO BEDRAN OLIVEIRA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-18",
+    "sacado": "213088",
+    "loja": "01",
+    "cliente": "LAERTE LEMES DE ARAUJO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-19",
+    "sacado": "220907",
+    "loja": "01",
+    "cliente": "JOSE HUMBERTO DE FARIAS",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-20",
+    "sacado": "223876",
+    "loja": "01",
+    "cliente": "LEANDRO MARTINS FIGUEIREDO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-21",
+    "sacado": "229072",
+    "loja": "01",
+    "cliente": "FABIO VIEIRA DO CARMO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-22",
+    "sacado": "229762",
+    "loja": "01",
+    "cliente": "MAURICIO MIGUEL ELIAS",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-23",
+    "sacado": "230422",
+    "loja": "01",
+    "cliente": "MARCILIA MONTEIRO ALVES AMORIM",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-24",
+    "sacado": "232862",
+    "loja": "01",
+    "cliente": "FRANCIS CARLOS GUIMARAES COUTO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-25",
+    "sacado": "232910",
+    "loja": "01",
+    "cliente": "AGROPECUARIA OTANI LTDA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-26",
+    "sacado": "232911",
+    "loja": "01",
+    "cliente": "RODRIGO DE ALMEIDA LISBOA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-27",
+    "sacado": "232912",
+    "loja": "01",
+    "cliente": "ALBERTO EIJI OTANI",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-28",
+    "sacado": "235362",
+    "loja": "01",
+    "cliente": "MARCIO RODRIGUES SIQUEIRA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-29",
+    "sacado": "235529",
+    "loja": "01",
+    "cliente": "WARLEM MENDONCA SILVA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-30",
+    "sacado": "236311",
+    "loja": "01",
+    "cliente": "CEFAS MINERACAO LTDA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-31",
+    "sacado": "236982",
+    "loja": "01",
+    "cliente": "FAZENDA SANTO ANTONIO AGROPECUARIA LTDA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-32",
+    "sacado": "237310",
+    "loja": "01",
+    "cliente": "MARCELO FRARE",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-33",
+    "sacado": "237862",
+    "loja": "01",
+    "cliente": "FERNANDO PERROTO BIAGI",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-34",
+    "sacado": "237944",
+    "loja": "01",
+    "cliente": "LUIDG ALESSANDRO UCHOA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-35",
+    "sacado": "240260",
+    "loja": "01",
+    "cliente": "ROBERTA DAMACENA MACHADO UCHOA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-36",
+    "sacado": "242659",
+    "loja": "01",
+    "cliente": "ONICIO DO CARMO COUTO JUNIOR",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-37",
+    "sacado": "310509",
+    "loja": "01",
+    "cliente": "AGNALDO SOUSA RESENDE",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-38",
+    "sacado": "993820",
+    "loja": "01",
+    "cliente": "JOSÉ MANOEL FERREIRA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-39",
+    "sacado": "186623",
+    "loja": "01",
+    "cliente": "OZIRES RIBEIRO SILVA / AGT",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-40",
+    "sacado": "260546",
+    "loja": "01",
+    "cliente": "ADEJENES CARMO DE LIMA FILHO",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-41",
+    "sacado": "230165",
+    "loja": "01",
+    "cliente": "ALTAMAR OLIVEIRA DA SILVA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-42",
+    "sacado": "232910",
+    "loja": "01",
+    "cliente": "AGROPECUARIA OTANI LTDA",
+    "fazenda": "NOVO PLANALTO"
+  },
+  {
+    "id": "cliente-importado-43",
+    "sacado": "240260",
+    "loja": "01",
+    "cliente": "ROBERTA DAMACENA MACHADO UCHOA",
+    "fazenda": "BOIADEIROS"
+  },
+  {
+    "id": "cliente-importado-44",
+    "sacado": "237862",
+    "loja": "01",
+    "cliente": "FERNANDO PERROTO BIAGI",
+    "fazenda": "CANAÂ"
+  },
+  {
+    "id": "cliente-importado-45",
+    "sacado": "010637",
+    "loja": "03",
+    "cliente": "JOSE FRANCISCO FERREIRA DE SENA",
+    "fazenda": "NOVO LAR"
+  },
+  {
+    "id": "cliente-importado-46",
+    "sacado": "010637",
+    "loja": "04",
+    "cliente": "JOSE FRANCISCO FERREIRA DE SENA",
+    "fazenda": "JAÇANAN"
+  },
+  {
+    "id": "cliente-importado-47",
+    "sacado": "010637",
+    "loja": "03",
+    "cliente": "JOSE FRANCISCO FERREIRA DE SENA",
+    "fazenda": "MIRAGEM"
+  },
+  {
+    "id": "cliente-importado-48",
+    "sacado": "237944",
+    "loja": "01",
+    "cliente": "LUIDG ALESSANDRO UCHOA",
+    "fazenda": "BOIADEIROS"
+  },
+  {
+    "id": "cliente-importado-49",
+    "sacado": "229072",
+    "loja": "01",
+    "cliente": "FABIO VIEIRA DO CARMO",
+    "fazenda": "DA MATA"
+  },
+  {
+    "id": "cliente-importado-50",
+    "sacado": "010637",
+    "loja": "05",
+    "cliente": "JOSE FRANCISCO FERREIRA DE SENA",
+    "fazenda": "PAU A PIQUE"
+  },
+  {
+    "id": "cliente-importado-51",
+    "sacado": "220907",
+    "loja": "01",
+    "cliente": "JOSE HUMBERTO DE FARIAS",
+    "fazenda": "PERDIZES"
+  },
+  {
+    "id": "cliente-importado-52",
+    "sacado": "310509",
+    "loja": "02",
+    "cliente": "AGNALDO SOUSA RESENDE",
+    "fazenda": "COMQUISTA"
+  },
+  {
+    "id": "cliente-importado-53",
+    "sacado": "010637",
+    "loja": "04",
+    "cliente": "JOSE FRANCISCO FERREIRA DE SENA",
+    "fazenda": "JAÇANÂ"
+  },
+  {
+    "id": "cliente-importado-54",
+    "sacado": "240260",
+    "loja": "01",
+    "cliente": "ROBERTA DAMACENA MACHADO UCHOA",
+    "fazenda": "BOIADEIRO"
+  },
+  {
+    "id": "cliente-importado-55",
+    "sacado": "011321",
+    "loja": "05",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": "ILHEUS"
+  },
+  {
+    "id": "cliente-importado-56",
+    "sacado": "186623",
+    "loja": "03",
+    "cliente": "OZIRES RIBEIRO SILVA / AGT",
+    "fazenda": "AGT AGROPECUÁRIA"
+  },
+  {
+    "id": "cliente-importado-57",
+    "sacado": "232912",
+    "loja": "01",
+    "cliente": "ALBERTO EIJI OTANI",
+    "fazenda": "BARRAÇÃO PLANALTO"
+  },
+  {
+    "id": "cliente-importado-58",
+    "sacado": "993820",
+    "loja": "02",
+    "cliente": "JOSÉ MANOEL FERREIRA",
+    "fazenda": "SHALON"
+  },
+  {
+    "id": "cliente-importado-59",
+    "sacado": "112441",
+    "loja": "01",
+    "cliente": "AGROPECUARIA MACHADINHO S/A",
+    "fazenda": "NOVO PLANALTO"
+  },
+  {
+    "id": "cliente-importado-60",
+    "sacado": "242659",
+    "loja": "01",
+    "cliente": "ONICIO DO CARMO COUTO JUNIOR",
+    "fazenda": "SANTA GLÓRIA"
+  },
+  {
+    "id": "cliente-importado-61",
+    "sacado": "232862",
+    "loja": "01",
+    "cliente": "FRANCIS CARLOS GUIMARAES COUTO",
+    "fazenda": "SÃO PEDRO"
+  },
+  {
+    "id": "cliente-importado-62",
+    "sacado": "260546",
+    "loja": "01",
+    "cliente": "ADEJENES CARMO DE LIMA FILHO",
+    "fazenda": "LIMA"
+  },
+  {
+    "id": "cliente-importado-63",
+    "sacado": "229072",
+    "loja": "01",
+    "cliente": "FABIO VIEIRA DO CARMO",
+    "fazenda": "FAZENDA DA MATA"
+  },
+  {
+    "id": "cliente-importado-64",
+    "sacado": "010637",
+    "loja": "02",
+    "cliente": "JOSE FRANCISCO FERREIRA DE SENA",
+    "fazenda": "MIRAGEM"
+  },
+  {
+    "id": "cliente-importado-65",
+    "sacado": "232912",
+    "loja": "01",
+    "cliente": "ALBERTO EIJI OTANI",
+    "fazenda": "NOVA ERA"
+  },
+  {
+    "id": "cliente-importado-66",
+    "sacado": "007539",
+    "loja": "01",
+    "cliente": "Fernando Carvalheiro machado",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-67",
+    "sacado": "003755",
+    "loja": "01",
+    "cliente": "Jose Alexandre Salmazo, Fazenda Conquista",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-68",
+    "sacado": "010637",
+    "loja": "02",
+    "cliente": "Jose Francisco Ferreira de Sena",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-69",
+    "sacado": "010637",
+    "loja": "04",
+    "cliente": "Jose Francisco Ferreira de Sena",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-70",
+    "sacado": "010637",
+    "loja": "03",
+    "cliente": "Jose Francisco Ferreira de Sena",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-71",
+    "sacado": "011321",
+    "loja": "04",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-72",
+    "sacado": "010637",
+    "loja": "05",
+    "cliente": "Jose Francisco Ferreira de Sena",
+    "fazenda": "Faz Pau a pique"
+  },
+  {
+    "id": "cliente-importado-73",
+    "sacado": "010637",
+    "loja": "03",
+    "cliente": "Jose Francisco Ferreira de Sena",
+    "fazenda": "Faz Novo Lar"
+  },
+  {
+    "id": "cliente-importado-74",
+    "sacado": "010637",
+    "loja": "05",
+    "cliente": "Jose Francisco Ferreira de Sena",
+    "fazenda": "Faz Novo Lar"
+  },
+  {
+    "id": "cliente-importado-75",
+    "sacado": "112441",
+    "loja": "01",
+    "cliente": "Agropecuaria machadinho",
+    "fazenda": "Faz São jose"
+  },
+  {
+    "id": "cliente-importado-76",
+    "sacado": "011321",
+    "loja": "04",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": "FAZ primavera"
+  },
+  {
+    "id": "cliente-importado-77",
+    "sacado": "011321",
+    "loja": "04",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": "Faz Ilheus"
+  },
+  {
+    "id": "cliente-importado-78",
+    "sacado": "010637",
+    "loja": "04",
+    "cliente": "Jose Francisco Ferreira de Sena",
+    "fazenda": "Faz Jaçanan"
+  },
+  {
+    "id": "cliente-importado-79",
+    "sacado": "010637",
+    "loja": "02",
+    "cliente": "Jose Francisco Ferreira de Sena",
+    "fazenda": "Faz Miragem"
+  },
+  {
+    "id": "cliente-importado-80",
+    "sacado": "011321",
+    "loja": "04",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": "FAZ Estrela"
+  },
+  {
+    "id": "cliente-importado-81",
+    "sacado": "010637",
+    "loja": "05",
+    "cliente": "Jose Francisco Ferreira de Sena",
+    "fazenda": "Faz Pau Miragem"
+  },
+  {
+    "id": "cliente-importado-82",
+    "sacado": "201169",
+    "loja": "01",
+    "cliente": "Marcos Danilo",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-83",
+    "sacado": "198622",
+    "loja": "01",
+    "cliente": "Antonio Anselmo",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-84",
+    "sacado": "011321",
+    "loja": "05",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": "ESTRELA"
+  },
+  {
+    "id": "cliente-importado-85",
+    "sacado": "011321",
+    "loja": "05",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": "PRIMAVERA"
+  },
+  {
+    "id": "cliente-importado-86",
+    "sacado": "010637",
+    "loja": "04",
+    "cliente": "JOSE FRANCISCO FERREIRA DE SENA",
+    "fazenda": "FAZ JAÇANÃ"
+  },
+  {
+    "id": "cliente-importado-87",
+    "sacado": "010637",
+    "loja": "03",
+    "cliente": "JOSE FRANCISCO FERREIRA DE SENA",
+    "fazenda": "FAZ FELICIDADE"
+  },
+  {
+    "id": "cliente-importado-88",
+    "sacado": "310509",
+    "loja": "02",
+    "cliente": "AGNALDO SOUZA RESENDE",
+    "fazenda": "CONQUISTA"
+  },
+  {
+    "id": "cliente-importado-89",
+    "sacado": "128829",
+    "loja": "01",
+    "cliente": "WANDER DE LIMA CAETANO",
+    "fazenda": "PLANALTO"
+  },
+  {
+    "id": "cliente-importado-90",
+    "sacado": "117170",
+    "loja": "02",
+    "cliente": "RENILDA MORO RODRIGUES",
+    "fazenda": "BOCALON"
+  },
+  {
+    "id": "cliente-importado-91",
+    "sacado": "173878",
+    "loja": "01",
+    "cliente": "RENATO RIBEIRO DO NASCIMENTO",
+    "fazenda": "3CORAÇÕES"
+  },
+  {
+    "id": "cliente-importado-92",
+    "sacado": "198665",
+    "loja": "01",
+    "cliente": "DANIEL DO VALLE SANTA CRUZ/Pablo",
+    "fazenda": "FAZ VEREDAS DO BURITIS"
+  },
+  {
+    "id": "cliente-importado-93",
+    "sacado": "220907",
+    "loja": "01",
+    "cliente": "JOSE HUMBERTO",
+    "fazenda": "FAZ PERDIZES"
+  },
+  {
+    "id": "cliente-importado-94",
+    "sacado": "037859",
+    "loja": "01",
+    "cliente": "TECCON S/A",
+    "fazenda": "FAZ BOA VISTA"
+  },
+  {
+    "id": "cliente-importado-95",
+    "sacado": "175710",
+    "loja": "01",
+    "cliente": "MARCIA MONTEIRO",
+    "fazenda": "FAZ"
+  },
+  {
+    "id": "cliente-importado-96",
+    "sacado": "229072",
+    "loja": "01",
+    "cliente": "FABIO VIEIRA DO CARMO",
+    "fazenda": "AMATO"
+  },
+  {
+    "id": "cliente-importado-97",
+    "sacado": "232911",
+    "loja": "01",
+    "cliente": "RODRIGO DE ALMEIDA LISBOA",
+    "fazenda": "FAZ BELA MANHA"
+  },
+  {
+    "id": "cliente-importado-98",
+    "sacado": "232910",
+    "loja": "01",
+    "cliente": "AGROPECUARIA OTANI",
+    "fazenda": "FAZ BELA MANHA"
+  },
+  {
+    "id": "cliente-importado-99",
+    "sacado": "232910",
+    "loja": "01",
+    "cliente": "AGROPECUARIA OTANI",
+    "fazenda": "Novo Planalto"
+  },
+  {
+    "id": "cliente-importado-100",
+    "sacado": "230422",
+    "loja": "01",
+    "cliente": "MARILIA MONTEIRO ALVES AMORIM",
+    "fazenda": "FAZ MATÃO"
+  },
+  {
+    "id": "cliente-importado-101",
+    "sacado": "011321",
+    "loja": "05",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": "FAZ ESTRELA"
+  },
+  {
+    "id": "cliente-importado-102",
+    "sacado": "185596",
+    "loja": "01",
+    "cliente": "AGNER FERREIRA DO PRADO",
+    "fazenda": "NOVO PLANALTO"
+  },
+  {
+    "id": "cliente-importado-103",
+    "sacado": "232912",
+    "loja": "01",
+    "cliente": "ALBERTO EIJI OTANI",
+    "fazenda": "Novo Planalto"
+  },
+  {
+    "id": "cliente-importado-104",
+    "sacado": "213088",
+    "loja": "02",
+    "cliente": "LAERTE LEMOS DE ARAUJO",
+    "fazenda": "SÃO JOSE"
+  },
+  {
+    "id": "cliente-importado-105",
+    "sacado": "223876",
+    "loja": "01",
+    "cliente": "LEANDRO MARTINS FIGUEIREDO",
+    "fazenda": "FAZ MATÃO"
+  },
+  {
+    "id": "cliente-importado-106",
+    "sacado": "242659",
+    "loja": "01",
+    "cliente": "Onicio do Carmo Junior",
+    "fazenda": "FAZ SANTA GLORIA"
+  },
+  {
+    "id": "cliente-importado-107",
+    "sacado": "235362",
+    "loja": "01",
+    "cliente": "Marcio Rodrigues Siqueira",
+    "fazenda": "FAZ ESTANCIA"
+  },
+  {
+    "id": "cliente-importado-108",
+    "sacado": "033923",
+    "loja": "01",
+    "cliente": "Abner Caixeta Neto",
+    "fazenda": "FAZ SANTA SONIA"
+  },
+  {
+    "id": "cliente-importado-109",
+    "sacado": "235529",
+    "loja": "01",
+    "cliente": "WARLEI MENDOÇA SILVA",
+    "fazenda": "FAZ RECANTO DA MATA"
+  },
+  {
+    "id": "cliente-importado-110",
+    "sacado": "236311",
+    "loja": "01",
+    "cliente": "Cefas Mineração LTDA",
+    "fazenda": "MINERADORA"
+  },
+  {
+    "id": "cliente-importado-111",
+    "sacado": "193591",
+    "loja": "01",
+    "cliente": "JAIME PERINELLI",
+    "fazenda": "SANTA CRISTINA"
+  },
+  {
+    "id": "cliente-importado-112",
+    "sacado": "236982",
+    "loja": "01",
+    "cliente": "FAZENDA SANTO ANTONIO AGROPECUARIA LTDA",
+    "fazenda": "FAZ SANTO ANTONIO"
+  },
+  {
+    "id": "cliente-importado-113",
+    "sacado": "237310",
+    "loja": "01",
+    "cliente": "MARCELO FRARE",
+    "fazenda": "SANTA CRISTINA"
+  },
+  {
+    "id": "cliente-importado-114",
+    "sacado": "010637",
+    "loja": "03",
+    "cliente": "Jose Francisco Ferreira de Sena",
+    "fazenda": "FAZ MIRAGEM"
+  },
+  {
+    "id": "cliente-importado-115",
+    "sacado": "010637",
+    "loja": "03",
+    "cliente": "Jose Francisco Ferreira de Sena",
+    "fazenda": "FAZ SECADO"
+  },
+  {
+    "id": "cliente-importado-116",
+    "sacado": "220907",
+    "loja": "01",
+    "cliente": "Jose Humberto de Farias",
+    "fazenda": "Novo Planalto"
+  },
+  {
+    "id": "cliente-importado-117",
+    "sacado": "237310",
+    "loja": "01",
+    "cliente": "JAIME/ MARCELO FRARE",
+    "fazenda": "SANTA CRISTINA"
+  },
+  {
+    "id": "cliente-importado-118",
+    "sacado": "011321",
+    "loja": "05",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": "FAZ ILHEUS"
+  },
+  {
+    "id": "cliente-importado-119",
+    "sacado": "011321",
+    "loja": "05",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": "FAZ PRIMAVERA"
+  },
+  {
+    "id": "cliente-importado-120",
+    "sacado": "240260",
+    "loja": "01",
+    "cliente": "Roberta Damacena Machado Uchoa",
+    "fazenda": "Faz Boiadeiros"
+  },
+  {
+    "id": "cliente-importado-121",
+    "sacado": "237862",
+    "loja": "01",
+    "cliente": "Fernando Perotto Biagi",
+    "fazenda": "Faz Canaâ"
+  },
+  {
+    "id": "cliente-importado-122",
+    "sacado": "175710",
+    "loja": "01",
+    "cliente": "Marcia Monteiro Meneggazzo",
+    "fazenda": "Nova era"
+  },
+  {
+    "id": "cliente-importado-123",
+    "sacado": "237944",
+    "loja": "01",
+    "cliente": "Luidg Alessandro Uchoa",
+    "fazenda": "Faz Boiadeiros"
+  },
+  {
+    "id": "cliente-importado-124",
+    "sacado": "007539",
+    "loja": "01",
+    "cliente": "Fernando Carvalheiro machado",
+    "fazenda": "2025-02-11 00:00:00"
+  },
+  {
+    "id": "cliente-importado-125",
+    "sacado": "003755",
+    "loja": "01",
+    "cliente": "Jose Alexandre Salmazo, Fazenda Conquista",
+    "fazenda": "2025-02-13 00:00:00"
+  },
+  {
+    "id": "cliente-importado-126",
+    "sacado": "033923",
+    "loja": "01",
+    "cliente": "ABNER CAIXETA NETO",
+    "fazenda": "SANTA SONIA"
+  },
+  {
+    "id": "cliente-importado-127",
+    "sacado": "310509",
+    "loja": "01",
+    "cliente": "AGNALDO SOUSA RESENDE",
+    "fazenda": "CONQUISTA"
+  },
+  {
+    "id": "cliente-importado-128",
+    "sacado": "112441",
+    "loja": "01",
+    "cliente": "AGROPECUARIA MACHADINHO S/A",
+    "fazenda": "SÃO JOSÉ"
+  },
+  {
+    "id": "cliente-importado-129",
+    "sacado": "232910",
+    "loja": "01",
+    "cliente": "AGROPECUARIA OTANI LTDA",
+    "fazenda": "BELA MANHÃ"
+  },
+  {
+    "id": "cliente-importado-130",
+    "sacado": "011321",
+    "loja": "02",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": ""
+  },
+  {
+    "id": "cliente-importado-131",
+    "sacado": "011321",
+    "loja": "03",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": "ILHÉUS"
+  },
+  {
+    "id": "cliente-importado-132",
+    "sacado": "011321",
+    "loja": "04",
+    "cliente": "CLEUBER MARCOS DE OLIVEIRA",
+    "fazenda": "ESTRELA"
+  },
+  {
+    "id": "cliente-importado-133",
+    "sacado": "198665",
+    "loja": "01",
+    "cliente": "DANIEL DO VALLE SANTA CRUZ",
+    "fazenda": "VEREDAS DOS BURITIS"
+  },
+  {
+    "id": "cliente-importado-134",
+    "sacado": "236982",
+    "loja": "01",
+    "cliente": "FAZENDA SANTO ANTONIO AGROPECUARIA LTDA",
+    "fazenda": "SANTO ANTÔNIO"
+  },
+  {
+    "id": "cliente-importado-135",
+    "sacado": "003755",
+    "loja": "01",
+    "cliente": "JOSE ALEXANDRE SALMAZO",
+    "fazenda": "CONQUISTA"
+  },
+  {
+    "id": "cliente-importado-136",
+    "sacado": "223876",
+    "loja": "01",
+    "cliente": "LEANDRO MARTINS FIGUEIREDO",
+    "fazenda": "MATÃO"
+  },
+  {
+    "id": "cliente-importado-137",
+    "sacado": "237944",
+    "loja": "01",
+    "cliente": "LUIDG ALESSANDRO UCHOA",
+    "fazenda": "BOIADEIRO"
+  },
+  {
+    "id": "cliente-importado-138",
+    "sacado": "175710",
+    "loja": "01",
+    "cliente": "MARCIA MONTEIRO MENEGAZZO",
+    "fazenda": "NOVA ERA"
+  },
+  {
+    "id": "cliente-importado-139",
+    "sacado": "230422",
+    "loja": "01",
+    "cliente": "MARCILIA MONTEIRO ALVES AMORIM",
+    "fazenda": "MATÃO"
+  },
+  {
+    "id": "cliente-importado-140",
+    "sacado": "235362",
+    "loja": "01",
+    "cliente": "MARCIO RODRIGUES SIQUEIRA",
+    "fazenda": "ESTÂNCIA"
+  },
+  {
+    "id": "cliente-importado-141",
+    "sacado": "173878",
+    "loja": "01",
+    "cliente": "RENATO RIBEIRO DO NASCIMENTO",
+    "fazenda": "3 CORAÇÕES"
+  },
+  {
+    "id": "cliente-importado-142",
+    "sacado": "117170",
+    "loja": "01",
+    "cliente": "RENILDA MORO RODRIGUES",
+    "fazenda": "BOCALON"
+  },
+  {
+    "id": "cliente-importado-143",
+    "sacado": "232911",
+    "loja": "01",
+    "cliente": "RODRIGO DE ALMEIDA LISBOA",
+    "fazenda": "BELA MANHÃ"
+  },
+  {
+    "id": "cliente-importado-144",
+    "sacado": "037859",
+    "loja": "01",
+    "cliente": "TECCON S/A CONSTRUCAO E PAVIMENTACAO",
+    "fazenda": "BOA VISTTA"
+  },
+  {
+    "id": "cliente-importado-145",
+    "sacado": "235529",
+    "loja": "01",
+    "cliente": "WARLEM MENDONCA SILVA",
+    "fazenda": "RECANTO DA MATA"
+  }
+]

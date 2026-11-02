@@ -14,6 +14,7 @@ import{ProfileAvatar,useProfile}from'./profile';
 import'./profile.css';
 import'./vibrant-dashboard.css';
 import{Quotation}from'./quotation';
+import'./apple-glass.css';
 
 const pages=[['Visão geral',LayoutDashboard],['Entregas',Truck],['Clientes & Fazendas',Users],['Orçamento',FileText],['Cadastros operacionais',Settings]];
 const pageDescriptions=['Resultados e gráficos do mês selecionado.','Todas as informações operacionais em uma única tela.','Cadastre cada fazenda dentro da loja do respectivo sacado.','Monte uma proposta comercial e copie a imagem pronta para o cliente.','Mantenha os cadastros usados em cada entrega organizados em uma única base.'];

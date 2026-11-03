@@ -114,6 +114,7 @@ tbody tr:hover{background:#fff7f5}
 .row-actions button,.icon-btn{height:34px;width:34px;border:1px solid #e9edf3;border-radius:7px;color:#748298;background:#fff}
 .row-actions button svg,.icon-btn svg{height:16px;width:16px}
 .row-actions button:hover,.icon-btn:hover{color:#d52229;background:#fff0ef;border-color:#f6cbcc}
+.client-actions{display:flex;align-items:center;gap:7px}.delete-client-btn{color:#c92a33}.delete-client-btn:hover{color:#b51f29;background:#fff0f1;border-color:#f0bcc1}
 .total-cell,.volume-cell{font-weight:750;color:#253751}
 .destination{gap:6px}
 .destination svg{color:#8996a9;flex-shrink:0}
